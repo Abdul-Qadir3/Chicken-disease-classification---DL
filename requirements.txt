@@ -1,0 +1,20 @@
+tensorflow # TensorFlow: Open-source platform for machine learning and deep learning computations.
+pandas # Pandas: Data manipulation and analysis library offering data structures like DataFrames.
+dvc # DVC (Data Version Control): Version control system for machine learning projects.
+    # (Note: Typically used via CLI, not directly imported in Python scripts.)
+notebook # Notebook: Web-based interactive computational environment for creating Jupyter notebooks.
+numpy ## NumPy: Fundamental package for numerical computations in Python, especially with arrays.
+matplotlib # Matplotlib: Comprehensive library for creating static, animated, and interactive visualizations.
+seaborn # Seaborn: Statistical data visualization library built on top of Matplotlib.
+python-box==6.0.2 ## Python-box==6.0.2: Access dictionaries like objects with dot notation.
+pyYAML # PyYAML: YAML parser and emitter for Python, used for configuration files.
+tqdm # tqdm: Library for adding progress bars to loops.
+ensure==1.0.2 # Ensure==1.0.2: Simple assertion library for type and value checking.
+joblib # # Joblib: Efficiently serializes Python objects for lightweight pipelining.
+types-pyYAML # Types-pyYAML: Provides type hints for PyYAML.
+    # (Enhances code with type checking; not directly imported.)
+scipy # SciPy: Library used for scientific and technical computing.
+Flask # Flask: Lightweight web application framework for Python.
+Flask-Cors ## Flask-Cors: Extension for Flask to handle Cross-Origin Resource Sharing (CORS).
+
+-e . #The -e . command is often used in Python environments, to install a package(setup.py) in "editable" mode

@@ -26,25 +26,31 @@ list_of_files = [
     "params.yaml",  # Parameters file in YAML format
     "requirements.txt",  # File listing the project dependencies
     "setup.py",  # Script for installing the project as a package
-    "research/trials.ipynb"  # Jupyter notebook for research or experimentation
-]
+    "research/trials.ipynb",  # Jupyter notebook for research or experimentation
+    "templates/index.html"
 
+
+]
+# Iterating Over the List of Files:
 # Loop through each file path in the list_of_files
 for filepath in list_of_files:
     filepath = Path(filepath)  # Convert the file path to a Path object (platform-independent)
-    filedir, filename = os.path.split(filepath)  # Split the path into directory and file name
+    filedir, filename = os.path.split(filepath)  # Split/unzip the path(tuple) into directory and file name
 
+    # Creating Directories:
     # If the directory part is not empty, create the directory
-    if filedir != "":
+    if filedir != "": # "exist_ok=True" means it won’t raise an error if the directory already exists.
         os.makedirs(filedir, exist_ok=True)  # Create the directory and any necessary parent directories
         logging.info(f"Creating directory: {filedir} for the file: {filename}")
 
+    # Creating Files:
     # If the file doesn't exist or is empty, create an empty file
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:  # Open the file in write mode
             pass  # No content is written, so the file remains empty
         logging.info(f"Creating empty file: {filepath}")
 
+    # Handling Existing Files:
     # If the file already exists and is not empty, log that information
     else:
         logging.info(f"{filename} already exists")
