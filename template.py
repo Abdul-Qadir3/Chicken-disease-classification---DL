@@ -15,7 +15,7 @@ list_of_files = [
     ".github/workflows/.gitkeep",  # Placeholder file to keep empty directories in Git
     f"src/{project_name}/__init__.py",  # Initialization file for the project package
     f"src/{project_name}/components/__init__.py",  # Initialization file for the components module
-    f"src/{project_name}/utils/__init__.py",  # Initialization file for the utils module (corrected typo from 'utiles')
+    f"src/{project_name}/utils/__init__.py",  # Initialization file for the utils module
     f"src/{project_name}/config/__init__.py",  # Initialization file for the config module
     f"src/{project_name}/config/configuration.py",  # Configuration script for the project
     f"src/{project_name}/pipeline/__init__.py",  # Initialization file for the pipeline module
